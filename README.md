@@ -1,5 +1,5 @@
-Bleater
-===========
+Bleater (Twitter based Social Network)
+======================================
 Authors: Shaleen Agarwal, Svyatoslav Sivov, Evan Wheeler
 
 Bleater is a social network designed for ungulates, although we hope to expand our userbase to humans. Bleater is an improvement over twitter, in that bleats can be up to *216 characters*, while tweets are capped at a measly 140.
