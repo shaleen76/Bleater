@@ -1,0 +1,16 @@
+.bleat.pure-g
+  .avatar-wrapper.pure-u-1-4.pure-u-md-1-8
+    %a{:href => "#{url('/user/')+bleat["uid"]}"}
+      %img.avatar{:alt => "img/common/missing_avatar.jpg", :src => bleat["avatarurl"]}
+  .content.pure-u-3-4.pure-u-md-7-8
+    .metadata.pure-g
+      .pure-u-1-2.name 
+        #{bleat["name"]}
+      .pure-u-1-2
+        .handle
+          @#{bleat["handle"]}
+        .timestamp
+          #{bleat["timestamp"]}
+    .body-wrapper
+      %p.body
+        #{bleat["content"]}

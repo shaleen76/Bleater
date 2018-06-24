@@ -1,0 +1,30 @@
+%head
+  %meta{:charset => "utf-8"}
+  %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+  %title  
+    Bleater
+  %script{:type => "text/javascript", :src => "//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"} 
+  %link{:type => "text/css", :href => "http://fonts.googleapis.com/css?family=Merriweather+Sans", :rel => "stylesheet"}
+  %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", :rel =>"stylesheet"}
+  %link{:type => "text/css", :rel => "stylesheet", :href => "/twitter.css"}
+  %link{:type => "text/css", :rel => "stylesheet", :href => "http://yui.yahooapis.com/pure/0.5.0/pure-min.css"}
+  %link{:type => "text/css", :rel => "stylesheet", :href => "http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css"}
+%body
+  #topmenu.pure-menu.pure-menu-open.pure-menu-horizontal
+    %a.pure-menu-heading{:href => "#"}
+      Bleater
+    %ul
+      %li.pure-menu-selected
+        %a{:href => "/"}
+          Home
+      %li.pure-menu-disabled
+        %a{:href => "#"}
+          Connect
+      %li.pure-menu-disabled
+        %a{:href => "/auth/logout"}
+          Log out
+
+  =yield
+
+%script{:type => "text/javascript", :src => "/profilepage.js"}
+
