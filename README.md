@@ -1,4 +1,4 @@
-Bleater (CSCI 621 NoSQL Project)
+Bleater
 ===========
 Authors: Shaleen Agarwal, Svyatoslav Sivov, Evan Wheeler
 
