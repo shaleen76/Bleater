@@ -1,0 +1,22 @@
+.profile
+  %img.avatar.pure-img(src = avatar_url)
+  %h3.name
+    #{username}
+  %h5.handle
+    @#{handle}
+  .pure-g
+    .pure-u-1-4
+    %button{:class => ["pure-u-1-2", "follow-button", user_relation, "userid-"+"#{userid}", "primary-button"]} 
+      #{profileButtonTxt(user_relation)}
+    .pure-u-1-4
+  .followstatswrapper.pure-g
+    .pure-u-1-2
+      %h5.follow-label
+        Following
+      %h4.followingcount.follow-count 
+        #{followingcount}
+    .pure-u-1-2
+      %h5.follow-label 
+        Followers
+      %h4.followercount.follow-count 
+        #{followercount}
